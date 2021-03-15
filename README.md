@@ -13,7 +13,36 @@ We propose a novel data-level solution, namely Instance-level change Augmentatio
 
 
 
-## Requirements
+## CDNet
 
-## Setup
+
+
+## Building Generator
+
+
+
+## Color Transfer
+
+
+
+## Shadow Extraction
+
+
+
+## Instance augmentation 
+
+
+
+## Citation
+
+If you use this code for your research, please cite our paper:
+
+```
+@Article{chen2021,
+    title={Adversarial Instance Augmentation for Building Change Detection in Remote Sensing Images},
+    author={Hao Chen, Wenyuan Li and Zhenwei Shi},
+    year={2021},
+    journal={IEEE Transactions on Geoscience and Remote Sensing},
+}
+```
 
