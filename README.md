@@ -13,9 +13,9 @@ We propose a novel data-level solution, namely Instance-level change Augmentatio
 
 see [building generator](building_generator/README.md) for details.
 
-Synthesized images (256 * 256) by the generator (trained on the AIRS building dataset).![syn_example_airs](G:/program/CD/IAug_CDNet/building_generator/images/syn_example_airs.png)
+Synthesized images (256 * 256) by the generator (trained on the AIRS building dataset).![syn_example_airs](./images/syn_example_airs.png)
 
-Synthesized images (64* 64) by the generator (trained on the Inria building dataset).![syn_example_inria](G:/program/CD/IAug_CDNet/building_generator/images/syn_example_inria.png)
+Synthesized images (64* 64) by the generator (trained on the Inria building dataset).![syn_example_inria](./images/syn_example_inria.png)
 
 ## Installation
 
@@ -74,7 +74,7 @@ see [Color Transfer](./ColorTransfer/README.md) for deteils.
 
 We resort to a simple yet effective nonlearning approach to match the color distribution of the two image sets (GAN-generated images and original images in the change detection dataset).
 
-![color_transfer](G:/program/CD/IAug_CDNet/ColorTransfer/images/color_transfer.png)
+![color_transfer](./images/color_transfer.png)
 
 ## requirements
 

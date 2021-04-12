@@ -2,9 +2,9 @@
 
 Our building generator is based on [GauGAN](https://arxiv.org/abs/1903.07291).
 
-Synthesized images (256 * 256) by the generator (trained on the AIRS building dataset).![syn_example_airs](images\syn_example_airs.png)
+Synthesized images (256 * 256) by the generator (trained on the AIRS building dataset).![syn_example_airs](./images/syn_example_airs.png)
 
-Synthesized images (64* 64) by the generator (trained on the Inria building dataset).![syn_example_inria](images\syn_example_inria.png)
+Synthesized images (64* 64) by the generator (trained on the Inria building dataset).![syn_example_inria](./images/syn_example_inria.png)
 
 ## Installation
 

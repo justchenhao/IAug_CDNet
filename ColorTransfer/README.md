@@ -4,7 +4,7 @@ We resort to a simple yet effective nonlearning approach to match the color dist
 
 Color Transfer between Images in a correlated colour space ( RGB ).
 
-![color_transfer](images\color_transfer.png)
+![color_transfer](./images/color_transfer.png)
 
 ## requirements
 
