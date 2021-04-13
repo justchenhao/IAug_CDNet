@@ -11,11 +11,11 @@ We propose a novel data-level solution, namely Instance-level change Augmentatio
 
 # Building Generator
 
-see [building generator](building_generator/README.md) for details.
+See [building generator](building_generator/README.md) for details.
 
 Synthesized images (256 * 256) by the generator (trained on the AIRS building dataset).![syn_example_airs](./images/syn_example_airs.png)
 
-Synthesized images (64* 64) by the generator (trained on the Inria building dataset).![syn_example_inria](./images/syn_example_inria.png)
+Synthesized images (64 * 64) by the generator (trained on the Inria building dataset).![syn_example_inria](./images/syn_example_inria.png)
 
 ## Installation
 
@@ -70,17 +70,17 @@ This code borrows heavily from [spade](https://github.com/nvlabs/spade/).
 
 # Color Transfer
 
-see [Color Transfer](./ColorTransfer/README.md) for deteils.
+See [Color Transfer](./ColorTransfer/README.md) for deteils.
 
 We resort to a simple yet effective nonlearning approach to match the color distribution of the two image sets (GAN-generated images and original images in the change detection dataset).
 
 ![color_transfer](./images/color_transfer.png)
 
-## requirements
+## Requirements
 
 - Matlab
 
-## usage
+## Usage
 
 We provide two demos to show the color transfer. 
 
@@ -94,11 +94,56 @@ This code borrows heavily from https://github.com/AissamDjahnine/ColorTransfer.
 
 # Shadow Extraction
 
+We show a simple shadow extraction method. The extracted shadow information can be used to make a more realistic image composite in the latter process. 
 
+![shadow_extraction](/images/shadow_extraction.png)
+
+We provide some examples for shadow extraction. The samples are in the folder `samples\shadow_sample`.
+
+## Usage
+
+You can edit the file `extract_shadow.py` and modify the path of the `image_folder`, `label_folder` and `out_folder`. Make sure that the image files are in `image_folder` and the corresponding label files are in `label_folder`. Run the following script:
+
+```bash
+python extract_shadow.py
+```
+
+Once you have successfully run the python file, the results can be found in the `out folder`.
 
 # Instance augmentation
 
+Here, we provide the python implementation of instance augmentation. 
 
+![image-20210413152845314](./images/synthesized_CD_sample.png)
+
+We provide some examples for instance augmentation. The samples are in the folder `samples\SYN_CD`.
+
+## Usage
+
+You can edit the file `composite_CD_sample.py` and modify the following values: 
+
+```
+#  first define the some paths
+A_folder = r'samples\LEVIR\A'
+B_folder = r'samples\LEVIR\B'
+L_folder = r'samples\LEVIR\label'
+ref_folder = r'samples\LEVIR\ref'
+#  instance path
+src_folder = r'samples\SYN_CD\image' #test
+label_folder = r'samples\SYN_CD\shadow'  # test
+out_folder = r'samples\SYN_CD\out_sample'
+os.makedirs(out_folder, exist_ok=True)
+# how many instance to paste per sample
+M = 50
+```
+
+ Then, run the following script:
+
+```bash
+python composite_CD_sample.py
+```
+
+Once you have successfully run the python file, the results can be found in the `out folder`.
 
 # CDNet
 
